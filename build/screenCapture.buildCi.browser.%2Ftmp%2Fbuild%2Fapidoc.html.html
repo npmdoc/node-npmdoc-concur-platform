@@ -1,0 +1,4262 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/concur/concur-platform-sdk-js">concur-platform (v0.3.13)</a>
+</h1>
+<h4>The concur-platform-sdk-js</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform">module concur-platform</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>allocations</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>attendeeTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>attendees</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>connectionRequests</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>digitalTaxInvoices</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>entries</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>entryAttendeeAssociations</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>expenseGroupConfigurations</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>getAccessToken</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>itemizations</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>itinerary</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>latestBookings</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>listItems</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>lists</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>loadImageFromURL</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>locations</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>nativeFlow</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>oauth</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>opportunities</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>post</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>purchaseOrderReceipts</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>purchaseOrders</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>quickexpenses</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>receipt</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>refreshToken</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>reportDigests</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>reports</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>requests</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>revokeToken</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>salesTaxValidationRequest</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>suppliers</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>travelProfile</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>user</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>utils.xml</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.</span>vendors</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.allocations">module concur-platform.allocations</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.allocations.get">
+            function <span class="apidocSignatureSpan">concur-platform.allocations.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.attendeeTypes">module concur-platform.attendeeTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendeeTypes.delete">
+            function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendeeTypes.get">
+            function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendeeTypes.put">
+            function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendeeTypes.send">
+            function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.attendees">module concur-platform.attendees</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendees.delete">
+            function <span class="apidocSignatureSpan">concur-platform.attendees.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendees.get">
+            function <span class="apidocSignatureSpan">concur-platform.attendees.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendees.put">
+            function <span class="apidocSignatureSpan">concur-platform.attendees.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.attendees.send">
+            function <span class="apidocSignatureSpan">concur-platform.attendees.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.connectionRequests">module concur-platform.connectionRequests</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.connectionRequests.delete">
+            function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.connectionRequests.get">
+            function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.connectionRequests.put">
+            function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.connectionRequests.send">
+            function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.digitalTaxInvoices">module concur-platform.digitalTaxInvoices</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.digitalTaxInvoices.get">
+            function <span class="apidocSignatureSpan">concur-platform.digitalTaxInvoices.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.digitalTaxInvoices.put">
+            function <span class="apidocSignatureSpan">concur-platform.digitalTaxInvoices.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.entries">module concur-platform.entries</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entries.delete">
+            function <span class="apidocSignatureSpan">concur-platform.entries.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entries.get">
+            function <span class="apidocSignatureSpan">concur-platform.entries.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entries.put">
+            function <span class="apidocSignatureSpan">concur-platform.entries.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entries.send">
+            function <span class="apidocSignatureSpan">concur-platform.entries.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.entryAttendeeAssociations">module concur-platform.entryAttendeeAssociations</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entryAttendeeAssociations.delete">
+            function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entryAttendeeAssociations.get">
+            function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entryAttendeeAssociations.put">
+            function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.entryAttendeeAssociations.send">
+            function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.expenseGroupConfigurations">module concur-platform.expenseGroupConfigurations</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.expenseGroupConfigurations.get">
+            function <span class="apidocSignatureSpan">concur-platform.expenseGroupConfigurations.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.getAccessToken">module concur-platform.getAccessToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.getAccessToken.accessToken">
+            function <span class="apidocSignatureSpan">concur-platform.getAccessToken.</span>accessToken
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.itemizations">module concur-platform.itemizations</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.itemizations.get">
+            function <span class="apidocSignatureSpan">concur-platform.itemizations.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.itemizations.send">
+            function <span class="apidocSignatureSpan">concur-platform.itemizations.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.itinerary">module concur-platform.itinerary</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.itinerary.get">
+            function <span class="apidocSignatureSpan">concur-platform.itinerary.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.itinerary.send">
+            function <span class="apidocSignatureSpan">concur-platform.itinerary.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.latestBookings">module concur-platform.latestBookings</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.latestBookings.get">
+            function <span class="apidocSignatureSpan">concur-platform.latestBookings.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.listItems">module concur-platform.listItems</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.listItems.delete">
+            function <span class="apidocSignatureSpan">concur-platform.listItems.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.listItems.get">
+            function <span class="apidocSignatureSpan">concur-platform.listItems.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.listItems.put">
+            function <span class="apidocSignatureSpan">concur-platform.listItems.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.listItems.send">
+            function <span class="apidocSignatureSpan">concur-platform.listItems.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.lists">module concur-platform.lists</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.lists.get">
+            function <span class="apidocSignatureSpan">concur-platform.lists.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.lists.put">
+            function <span class="apidocSignatureSpan">concur-platform.lists.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.lists.send">
+            function <span class="apidocSignatureSpan">concur-platform.lists.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.loadImageFromURL">module concur-platform.loadImageFromURL</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.loadImageFromURL.loadImageFromURLAndPost">
+            function <span class="apidocSignatureSpan">concur-platform.loadImageFromURL.</span>loadImageFromURLAndPost
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.locations">module concur-platform.locations</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.locations.get">
+            function <span class="apidocSignatureSpan">concur-platform.locations.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.nativeFlow">module concur-platform.nativeFlow</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.nativeFlow.requestToken">
+            function <span class="apidocSignatureSpan">concur-platform.nativeFlow.</span>requestToken
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.oauth">module concur-platform.oauth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.oauth.appCenter">
+            function <span class="apidocSignatureSpan">concur-platform.oauth.</span>appCenter
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.oauth.native">
+            function <span class="apidocSignatureSpan">concur-platform.oauth.</span>native
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.oauth.refreshToken">
+            function <span class="apidocSignatureSpan">concur-platform.oauth.</span>refreshToken
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.oauth.revokeToken">
+            function <span class="apidocSignatureSpan">concur-platform.oauth.</span>revokeToken
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.opportunities">module concur-platform.opportunities</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.opportunities.get">
+            function <span class="apidocSignatureSpan">concur-platform.opportunities.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.post">module concur-platform.post</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.post.post">
+            function <span class="apidocSignatureSpan">concur-platform.</span>post
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.purchaseOrderReceipts">module concur-platform.purchaseOrderReceipts</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.purchaseOrderReceipts.put">
+            function <span class="apidocSignatureSpan">concur-platform.purchaseOrderReceipts.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.purchaseOrders">module concur-platform.purchaseOrders</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.purchaseOrders.get">
+            function <span class="apidocSignatureSpan">concur-platform.purchaseOrders.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.purchaseOrders.put">
+            function <span class="apidocSignatureSpan">concur-platform.purchaseOrders.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.purchaseOrders.send">
+            function <span class="apidocSignatureSpan">concur-platform.purchaseOrders.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.quickexpenses">module concur-platform.quickexpenses</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.quickexpenses.delete">
+            function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.quickexpenses.get">
+            function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.quickexpenses.put">
+            function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.quickexpenses.send">
+            function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.receipt">module concur-platform.receipt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.receipt.delete">
+            function <span class="apidocSignatureSpan">concur-platform.receipt.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.receipt.get">
+            function <span class="apidocSignatureSpan">concur-platform.receipt.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.receipt.send">
+            function <span class="apidocSignatureSpan">concur-platform.receipt.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.refreshToken">module concur-platform.refreshToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.refreshToken.send">
+            function <span class="apidocSignatureSpan">concur-platform.refreshToken.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.reportDigests">module concur-platform.reportDigests</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.reportDigests.get">
+            function <span class="apidocSignatureSpan">concur-platform.reportDigests.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.reports">module concur-platform.reports</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.reports.get">
+            function <span class="apidocSignatureSpan">concur-platform.reports.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.reports.put">
+            function <span class="apidocSignatureSpan">concur-platform.reports.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.reports.send">
+            function <span class="apidocSignatureSpan">concur-platform.reports.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.requests">module concur-platform.requests</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.requests.get">
+            function <span class="apidocSignatureSpan">concur-platform.requests.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.revokeToken">module concur-platform.revokeToken</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.revokeToken.send">
+            function <span class="apidocSignatureSpan">concur-platform.revokeToken.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.salesTaxValidationRequest">module concur-platform.salesTaxValidationRequest</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.salesTaxValidationRequest.get">
+            function <span class="apidocSignatureSpan">concur-platform.salesTaxValidationRequest.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.salesTaxValidationRequest.put">
+            function <span class="apidocSignatureSpan">concur-platform.salesTaxValidationRequest.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.suppliers">module concur-platform.suppliers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.suppliers.get">
+            function <span class="apidocSignatureSpan">concur-platform.suppliers.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.travelProfile">module concur-platform.travelProfile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.travelProfile.get">
+            function <span class="apidocSignatureSpan">concur-platform.travelProfile.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.user">module concur-platform.user</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.user.get">
+            function <span class="apidocSignatureSpan">concur-platform.user.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.user.send">
+            function <span class="apidocSignatureSpan">concur-platform.user.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.utils">module concur-platform.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.utils.delete">
+            function <span class="apidocSignatureSpan">concur-platform.utils.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.utils.get">
+            function <span class="apidocSignatureSpan">concur-platform.utils.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.utils.put">
+            function <span class="apidocSignatureSpan">concur-platform.utils.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.utils.send">
+            function <span class="apidocSignatureSpan">concur-platform.utils.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">concur-platform.utils.</span>xml</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">concur-platform.utils.</span>serviceURL</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.utils.xml">module concur-platform.utils.xml</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.utils.xml.getCleansedObjectFromXmlBody">
+            function <span class="apidocSignatureSpan">concur-platform.utils.xml.</span>getCleansedObjectFromXmlBody
+            <span class="apidocSignatureSpan">(xmlBody, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.concur-platform.vendors">module concur-platform.vendors</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.vendors.delete">
+            function <span class="apidocSignatureSpan">concur-platform.vendors.</span>delete
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.vendors.get">
+            function <span class="apidocSignatureSpan">concur-platform.vendors.</span>get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.vendors.put">
+            function <span class="apidocSignatureSpan">concur-platform.vendors.</span>put
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.concur-platform.vendors.send">
+            function <span class="apidocSignatureSpan">concur-platform.vendors.</span>send
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform" id="apidoc.module.concur-platform">module concur-platform</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.allocations" id="apidoc.module.concur-platform.allocations">module concur-platform.allocations</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.allocations.get" id="apidoc.element.concur-platform.allocations.get">
+        function <span class="apidocSignatureSpan">concur-platform.allocations.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.attendeeTypes" id="apidoc.module.concur-platform.attendeeTypes">module concur-platform.attendeeTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendeeTypes.delete" id="apidoc.element.concur-platform.attendeeTypes.delete">
+        function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendeeTypes.get" id="apidoc.element.concur-platform.attendeeTypes.get">
+        function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendeeTypes.put" id="apidoc.element.concur-platform.attendeeTypes.put">
+        function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendeeTypes.send" id="apidoc.element.concur-platform.attendeeTypes.send">
+        function <span class="apidocSignatureSpan">concur-platform.attendeeTypes.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.attendees" id="apidoc.module.concur-platform.attendees">module concur-platform.attendees</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendees.delete" id="apidoc.element.concur-platform.attendees.delete">
+        function <span class="apidocSignatureSpan">concur-platform.attendees.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendees.get" id="apidoc.element.concur-platform.attendees.get">
+        function <span class="apidocSignatureSpan">concur-platform.attendees.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendees.put" id="apidoc.element.concur-platform.attendees.put">
+        function <span class="apidocSignatureSpan">concur-platform.attendees.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.attendees.send" id="apidoc.element.concur-platform.attendees.send">
+        function <span class="apidocSignatureSpan">concur-platform.attendees.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.connectionRequests" id="apidoc.module.concur-platform.connectionRequests">module concur-platform.connectionRequests</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.connectionRequests.delete" id="apidoc.element.concur-platform.connectionRequests.delete">
+        function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.connectionRequests.get" id="apidoc.element.concur-platform.connectionRequests.get">
+        function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.connectionRequests.put" id="apidoc.element.concur-platform.connectionRequests.put">
+        function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.connectionRequests.send" id="apidoc.element.concur-platform.connectionRequests.send">
+        function <span class="apidocSignatureSpan">concur-platform.connectionRequests.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.digitalTaxInvoices" id="apidoc.module.concur-platform.digitalTaxInvoices">module concur-platform.digitalTaxInvoices</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.digitalTaxInvoices.get" id="apidoc.element.concur-platform.digitalTaxInvoices.get">
+        function <span class="apidocSignatureSpan">concur-platform.digitalTaxInvoices.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.digitalTaxInvoices.put" id="apidoc.element.concur-platform.digitalTaxInvoices.put">
+        function <span class="apidocSignatureSpan">concur-platform.digitalTaxInvoices.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.entries" id="apidoc.module.concur-platform.entries">module concur-platform.entries</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entries.delete" id="apidoc.element.concur-platform.entries.delete">
+        function <span class="apidocSignatureSpan">concur-platform.entries.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entries.get" id="apidoc.element.concur-platform.entries.get">
+        function <span class="apidocSignatureSpan">concur-platform.entries.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entries.put" id="apidoc.element.concur-platform.entries.put">
+        function <span class="apidocSignatureSpan">concur-platform.entries.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entries.send" id="apidoc.element.concur-platform.entries.send">
+        function <span class="apidocSignatureSpan">concur-platform.entries.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.entryAttendeeAssociations" id="apidoc.module.concur-platform.entryAttendeeAssociations">module concur-platform.entryAttendeeAssociations</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entryAttendeeAssociations.delete" id="apidoc.element.concur-platform.entryAttendeeAssociations.delete">
+        function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entryAttendeeAssociations.get" id="apidoc.element.concur-platform.entryAttendeeAssociations.get">
+        function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entryAttendeeAssociations.put" id="apidoc.element.concur-platform.entryAttendeeAssociations.put">
+        function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.entryAttendeeAssociations.send" id="apidoc.element.concur-platform.entryAttendeeAssociations.send">
+        function <span class="apidocSignatureSpan">concur-platform.entryAttendeeAssociations.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.expenseGroupConfigurations" id="apidoc.module.concur-platform.expenseGroupConfigurations">module concur-platform.expenseGroupConfigurations</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.expenseGroupConfigurations.get" id="apidoc.element.concur-platform.expenseGroupConfigurations.get">
+        function <span class="apidocSignatureSpan">concur-platform.expenseGroupConfigurations.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.getAccessToken" id="apidoc.module.concur-platform.getAccessToken">module concur-platform.getAccessToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.getAccessToken.accessToken" id="apidoc.element.concur-platform.getAccessToken.accessToken">
+        function <span class="apidocSignatureSpan">concur-platform.getAccessToken.</span>accessToken
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">accessToken = function (options) {
+    var deferred = Q.defer();
+
+    var concurAccessTokenURL = util.format('%s/net2/oauth2/getaccesstoken.ashx?code=%s&amp;client_id=%s&amp;client_secret=%s',
+        utils.serviceURL,
+        options.code,
+        options.client_id,
+        options.client_secret);
+
+    var headers = {
+        'Accept' : 'application/json',
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    request({url:concurAccessTokenURL, headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject({
+                'error':'Auth URL ('+concurAccessTokenURL+') returned HTTP status code '+response.statusCode
+            });
+        }
+
+        var bodyJSON = JSON.parse(body);
+
+        // 200, but Error in token payload
+        if (bodyJSON.Error) return deferred.reject({'error':bodyJSON.Message});
+        // parse and map access token
+        var token = {};
+        token.value = bodyJSON.Access_Token.Token;
+        token.instanceUrl = bodyJSON.Access_Token.Instance_Url;
+        token.expiration = bodyJSON.Access_Token.Expiration_date;
+        token.refreshToken = bodyJSON.Access_Token.Refresh_Token;
+        deferred.resolve(token);
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.itemizations" id="apidoc.module.concur-platform.itemizations">module concur-platform.itemizations</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.itemizations.get" id="apidoc.element.concur-platform.itemizations.get">
+        function <span class="apidocSignatureSpan">concur-platform.itemizations.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.itemizations.send" id="apidoc.element.concur-platform.itemizations.send">
+        function <span class="apidocSignatureSpan">concur-platform.itemizations.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.itinerary" id="apidoc.module.concur-platform.itinerary">module concur-platform.itinerary</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.itinerary.get" id="apidoc.element.concur-platform.itinerary.get">
+        function <span class="apidocSignatureSpan">concur-platform.itinerary.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+    var deferred = Q.defer();
+
+    var headers = {
+        'Authorization' : 'OAuth ' + options.oauthToken,
+        'Accept' : 'application/json',
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    var itinURL = itineraryURL;
+    if (options.id) {
+        itinURL =  itinURL + '/'+options.id;
+    }
+
+    request({url:itinURL, headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject({'error':'Itinerary URL ('+itineraryURL+') returned HTTP status code '+response.statusCode});
+        }
+
+        if (options.id) {
+            xml.getCleansedObjectFromXmlBody(body, function (err, result) {
+                if (err){
+                    deferred.resolve(err);
+                } else {
+                    deferred.resolve(result);
+                }
+            });
+        } else {
+            var bodyJSON = JSON.parse(body);
+
+            // 200, but Error in token payload
+            if (bodyJSON.Error) return deferred.reject({'error':bodyJSON.Message});
+            // parse and map access token
+            deferred.resolve(bodyJSON);
+        }
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.itinerary.send" id="apidoc.element.concur-platform.itinerary.send">
+        function <span class="apidocSignatureSpan">concur-platform.itinerary.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+    var deferred = Q.defer();
+
+    var headers = {
+        'Authorization' : 'OAuth '+options.oauthToken,
+        'Accept':'application/json',
+        'Content-Type':options.contentType,
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    request.post({url:itineraryURL, headers:headers, body:options.body}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject({'error':'Itinerary URL ('+itineraryURL+') returned HTTP status code '+response.statusCode});
+        }
+
+        xml.getCleansedObjectFromXmlBody(body, function (err, result) {
+            if (err){
+                deferred.resolve(err);
+            } else {
+                delete result.Itinerary.$;
+                deferred.resolve(result);
+            }
+        });
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.latestBookings" id="apidoc.module.concur-platform.latestBookings">module concur-platform.latestBookings</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.latestBookings.get" id="apidoc.element.concur-platform.latestBookings.get">
+        function <span class="apidocSignatureSpan">concur-platform.latestBookings.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.listItems" id="apidoc.module.concur-platform.listItems">module concur-platform.listItems</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.listItems.delete" id="apidoc.element.concur-platform.listItems.delete">
+        function <span class="apidocSignatureSpan">concur-platform.listItems.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.listItems.get" id="apidoc.element.concur-platform.listItems.get">
+        function <span class="apidocSignatureSpan">concur-platform.listItems.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.listItems.put" id="apidoc.element.concur-platform.listItems.put">
+        function <span class="apidocSignatureSpan">concur-platform.listItems.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.listItems.send" id="apidoc.element.concur-platform.listItems.send">
+        function <span class="apidocSignatureSpan">concur-platform.listItems.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.lists" id="apidoc.module.concur-platform.lists">module concur-platform.lists</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.lists.get" id="apidoc.element.concur-platform.lists.get">
+        function <span class="apidocSignatureSpan">concur-platform.lists.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.lists.put" id="apidoc.element.concur-platform.lists.put">
+        function <span class="apidocSignatureSpan">concur-platform.lists.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.lists.send" id="apidoc.element.concur-platform.lists.send">
+        function <span class="apidocSignatureSpan">concur-platform.lists.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.loadImageFromURL" id="apidoc.module.concur-platform.loadImageFromURL">module concur-platform.loadImageFromURL</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.loadImageFromURL.loadImageFromURLAndPost" id="apidoc.element.concur-platform.loadImageFromURL.loadImageFromURLAndPost">
+        function <span class="apidocSignatureSpan">concur-platform.loadImageFromURL.</span>loadImageFromURLAndPost
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadImageFromURLAndPost = function (options) {
+  var deferred = Q.defer();
+  // Make request to the image url
+  request({url: options.imageURL, encoding: null}, function (err, res, body) {
+    // Error with the actual request
+    if (err){
+      return deferred.reject(err);
+    }
+
+    // Non-200 HTTP response code
+    if (res.statusCode != 200){
+      return deferred.reject({'error':res.statusCode, 'body':body});
+    }
+
+    options.contentType = res.headers['content-type'];
+    options.body = body;
+    image.post(options)
+    .then(function (imageId) {
+      deferred.resolve(imageId);
+    })
+    .fail(function (error) {
+      deferred.reject(error);
+    });
+  });
+  return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.locations" id="apidoc.module.concur-platform.locations">module concur-platform.locations</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.locations.get" id="apidoc.element.concur-platform.locations.get">
+        function <span class="apidocSignatureSpan">concur-platform.locations.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.nativeFlow" id="apidoc.module.concur-platform.nativeFlow">module concur-platform.nativeFlow</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.nativeFlow.requestToken" id="apidoc.element.concur-platform.nativeFlow.requestToken">
+        function <span class="apidocSignatureSpan">concur-platform.nativeFlow.</span>requestToken
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requestToken = function (options) {
+    var deferred = Q.defer();
+
+    var concurAccessTokenURL = utils.serviceURL + '/net2/oauth2/accesstoken.ashx';
+
+    var headers = {
+        'Authorization' : 'Basic ' + new Buffer(options.username+':'+options.password).toString('base64'),
+        'X-ConsumerKey' : options.consumerKey,
+        'Accept' : 'application/json',
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    request({url:concurAccessTokenURL, headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject({'error':'Auth URL ('+concurAccessTokenURL+') returned HTTP status code '+response.statusCode
+});
+        }
+
+        var bodyJSON = JSON.parse(body);
+
+        // 200, but Error in token payload
+        if (bodyJSON.Error) return deferred.reject({'error':bodyJSON.Message});
+        // parse and map access token
+        var token = {};
+        token.value = bodyJSON.Access_Token.Token;
+        token.instanceUrl = bodyJSON.Access_Token.Instance_Url;
+        token.expiration = bodyJSON.Access_Token.Expiration_date;
+        token.refreshToken = bodyJSON.Access_Token.Refresh_Token;
+        deferred.resolve(token);
+    });
+
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.oauth" id="apidoc.module.concur-platform.oauth">module concur-platform.oauth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.oauth.appCenter" id="apidoc.element.concur-platform.oauth.appCenter">
+        function <span class="apidocSignatureSpan">concur-platform.oauth.</span>appCenter
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">appCenter = function (options) {
+    var deferred = Q.defer();
+
+    var concurAccessTokenURL = util.format('%s/net2/oauth2/getaccesstoken.ashx?code=%s&amp;client_id=%s&amp;client_secret=%s',
+        utils.serviceURL,
+        options.code,
+        options.client_id,
+        options.client_secret);
+
+    var headers = {
+        'Accept' : 'application/json',
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    request({url:concurAccessTokenURL, headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject({
+                'error':'Auth URL ('+concurAccessTokenURL+') returned HTTP status code '+response.statusCode
+            });
+        }
+
+        var bodyJSON = JSON.parse(body);
+
+        // 200, but Error in token payload
+        if (bodyJSON.Error) return deferred.reject({'error':bodyJSON.Message});
+        // parse and map access token
+        var token = {};
+        token.value = bodyJSON.Access_Token.Token;
+        token.instanceUrl = bodyJSON.Access_Token.Instance_Url;
+        token.expiration = bodyJSON.Access_Token.Expiration_date;
+        token.refreshToken = bodyJSON.Access_Token.Refresh_Token;
+        deferred.resolve(token);
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var options = {
+    code:code,
+    client_id:client_id,
+    client_secret:client_secret
+}
+
+concur.oauth.<span class="apidocCodeKeywordSpan">appCenter</span>(options)
+.then(function(token) {
+    // token will contain the value, instanceUrl, refreshToken, and expiration details
+})
+.fail(function(error) {
+    // error will contain the error message returned
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.oauth.native" id="apidoc.element.concur-platform.oauth.native">
+        function <span class="apidocSignatureSpan">concur-platform.oauth.</span>native
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">native = function (options) {
+    var deferred = Q.defer();
+
+    var concurAccessTokenURL = utils.serviceURL + '/net2/oauth2/accesstoken.ashx';
+
+    var headers = {
+        'Authorization' : 'Basic ' + new Buffer(options.username+':'+options.password).toString('base64'),
+        'X-ConsumerKey' : options.consumerKey,
+        'Accept' : 'application/json',
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    request({url:concurAccessTokenURL, headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject({'error':'Auth URL ('+concurAccessTokenURL+') returned HTTP status code '+response.statusCode
+});
+        }
+
+        var bodyJSON = JSON.parse(body);
+
+        // 200, but Error in token payload
+        if (bodyJSON.Error) return deferred.reject({'error':bodyJSON.Message});
+        // parse and map access token
+        var token = {};
+        token.value = bodyJSON.Access_Token.Token;
+        token.instanceUrl = bodyJSON.Access_Token.Instance_Url;
+        token.expiration = bodyJSON.Access_Token.Expiration_date;
+        token.refreshToken = bodyJSON.Access_Token.Refresh_Token;
+        deferred.resolve(token);
+    });
+
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var options = {
+    username:username,
+    password:password,
+    consumerKey:consumerKey
+}
+
+concur.oauth.<span class="apidocCodeKeywordSpan">native</span>(options)
+.then(function(token) {
+    // token will contain the value, instanceUrl, refreshToken, and expiration details
+})
+.fail(function(error) {
+    // error will contain the error message returned
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.oauth.refreshToken" id="apidoc.element.concur-platform.oauth.refreshToken">
+        function <span class="apidocSignatureSpan">concur-platform.oauth.</span>refreshToken
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">refreshToken = function (options) {
+  var tempURL = util.format('%s?refresh_token=%s&amp;client_id=%s&amp;client_secret=%s',
+      url,
+      options.refreshToken,
+      options.client_id,
+      options.client_secret);
+  options.resourceURL = tempURL;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var options = {
+    refreshToken:refreshToken,
+    client_id:client_id,
+    client_secret:client_secret
+}
+
+concur.oauth.<span class="apidocCodeKeywordSpan">refreshToken</span>(options)
+.then(function(token) {
+    // token will contain an `Access_Token` object that contains `Token`, `Instance_Url` and `Expiration_date`
+})
+.fail(function(error) {
+    // error will contain the error message returned
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.oauth.revokeToken" id="apidoc.element.concur-platform.oauth.revokeToken">
+        function <span class="apidocSignatureSpan">concur-platform.oauth.</span>revokeToken
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">revokeToken = function (options) {
+  var tempURL;
+  if (options.token) {
+    tempURL = util.format('%s?token=%s', url, options.token);
+  } else {
+    tempURL = util.format('%s?client_id=%s&amp;user=%s', url, options.client_id, options.loginId);
+  }
+  options.resourceURL = tempURL;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+[Revoke an Access Token](https://developer.concur.com/oauth-20/working-access-tokens/revoking-access-tokens).
+
+var options = {
+    token:token
+}
+
+concur.oauth.<span class="apidocCodeKeywordSpan">revokeToken</span>(options)
+.then(function() {
+    // token is revoked
+})
+.fail(function(error) {
+    // error will contain the error message returned
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.opportunities" id="apidoc.module.concur-platform.opportunities">module concur-platform.opportunities</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.opportunities.get" id="apidoc.element.concur-platform.opportunities.get">
+        function <span class="apidocSignatureSpan">concur-platform.opportunities.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.post" id="apidoc.module.concur-platform.post">module concur-platform.post</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.post.post" id="apidoc.element.concur-platform.post.post">
+        function <span class="apidocSignatureSpan">concur-platform.</span>post
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post = function (options) {
+    var deferred = Q.defer();
+
+    var headers = {
+        'Authorization' : 'OAuth '+options.oauthToken,
+        'Accept':'application/json',
+        'Content-Type':options.contentType,
+        'User-Agent':'Concur-platform-sdk-js'
+    };
+
+    request.post({url:options.url, headers:headers, body:options.body}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode &gt; 399){
+            return deferred.reject({'error':options.error+' returned HTTP status code '+response.statusCode, 'body':body});
+        }
+
+        var bodyJSON = JSON.parse(body);
+
+        // 200, but Error in token payload
+        if (bodyJSON.Message) return deferred.reject({'error':bodyJSON.Message});
+
+        // parse and map receipt ID
+        if (bodyJSON.ID || bodyJSON.Id) {
+            deferred.resolve(bodyJSON.ID || bodyJSON.Id);
+        } else {
+            deferred.resolve(bodyJSON.ReceiptID);
+        }
+
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // Non-200 HTTP response code
+  if (res.statusCode != 200){
+    return deferred.reject({'error':res.statusCode, 'body':body});
+  }
+
+  options.contentType = res.headers['content-type'];
+  options.body = body;
+  image.<span class="apidocCodeKeywordSpan">post</span>(options)
+  .then(function (imageId) {
+    deferred.resolve(imageId);
+  })
+  .fail(function (error) {
+    deferred.reject(error);
+  });
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.purchaseOrderReceipts" id="apidoc.module.concur-platform.purchaseOrderReceipts">module concur-platform.purchaseOrderReceipts</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.purchaseOrderReceipts.put" id="apidoc.element.concur-platform.purchaseOrderReceipts.put">
+        function <span class="apidocSignatureSpan">concur-platform.purchaseOrderReceipts.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.purchaseOrders" id="apidoc.module.concur-platform.purchaseOrders">module concur-platform.purchaseOrders</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.purchaseOrders.get" id="apidoc.element.concur-platform.purchaseOrders.get">
+        function <span class="apidocSignatureSpan">concur-platform.purchaseOrders.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.purchaseOrders.put" id="apidoc.element.concur-platform.purchaseOrders.put">
+        function <span class="apidocSignatureSpan">concur-platform.purchaseOrders.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.purchaseOrders.send" id="apidoc.element.concur-platform.purchaseOrders.send">
+        function <span class="apidocSignatureSpan">concur-platform.purchaseOrders.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.quickexpenses" id="apidoc.module.concur-platform.quickexpenses">module concur-platform.quickexpenses</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.quickexpenses.delete" id="apidoc.element.concur-platform.quickexpenses.delete">
+        function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+    if (options.quickexpenseId) {
+        options.id = options.quickexpenseId;
+    }
+    options.resourceURL = url;
+    return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.quickexpenses.get" id="apidoc.element.concur-platform.quickexpenses.get">
+        function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+    if (options.quickexpenseId) {
+        options.id = options.quickexpenseId;
+    }
+    options.resourceURL = url;
+    return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.quickexpenses.put" id="apidoc.element.concur-platform.quickexpenses.put">
+        function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+    if (options.quickexpenseId) {
+        options.id = options.quickexpenseId;
+    }
+    options.resourceURL = url;
+    return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.quickexpenses.send" id="apidoc.element.concur-platform.quickexpenses.send">
+        function <span class="apidocSignatureSpan">concur-platform.quickexpenses.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+    options.resourceURL = url;
+    return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.receipt" id="apidoc.module.concur-platform.receipt">module concur-platform.receipt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.receipt.delete" id="apidoc.element.concur-platform.receipt.delete">
+        function <span class="apidocSignatureSpan">concur-platform.receipt.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+    if (options.receiptId) {
+        options.id = options.receiptId;
+    }
+    options.resourceURL = receiptImageURL;
+    return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.receipt.get" id="apidoc.element.concur-platform.receipt.get">
+        function <span class="apidocSignatureSpan">concur-platform.receipt.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+    if (options.receiptId) {
+        options.id = options.receiptId;
+    }
+    options.resourceURL = receiptImageURL;
+    return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.receipt.send" id="apidoc.element.concur-platform.receipt.send">
+        function <span class="apidocSignatureSpan">concur-platform.receipt.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+    var requestBody = {};
+    requestBody.oauthToken = options.oauthToken;
+
+    if (options.data &amp;&amp; options.data.MatchingFact) {
+        requestBody.url = eReceiptWithImageURL;
+        requestBody.body = JSON.stringify(options.data);
+        requestBody.error = "eReceipt with Image URL: " + eReceiptWithImageURL;
+    } else if(options.entryId) {
+        var tempURL = entryImageUrl;
+        tempURL = tempURL +'/'+options.entryId;
+        requestBody.body = options.image || options.imageURL;
+        requestBody.url = tempURL;
+        requestBody.error = "Entry image URL: " + entryImageUrl;
+    } else if (options.requestId) {
+        var tempPaymentRequestURL = paymentRequest;
+        tempPaymentRequestURL = tempPaymentRequestURL +'/'+options.requestId;
+        requestBody.body = options.image || options.imageURL;
+        requestBody.url = tempPaymentRequestURL;
+        requestBody.error = "Payment Request Image URL " + tempPaymentRequestURL;
+    } else if (options.reportId) {
+        var tempReceiptURL = reportImageUrl;
+        tempReceiptURL = tempReceiptURL +'/'+options.reportId;
+        requestBody.body = options.image || options.imageURL;
+        requestBody.url = tempReceiptURL;
+        requestBody.error = "Report Image URL " + tempReceiptURL;
+    } else if (options.image) {
+        requestBody.url = receiptImageURL;
+        requestBody.body = options.image;
+        requestBody.error = "Receipt Image URL: " + receiptImageURL;
+    } else if (options.imageURL) {
+        requestBody.url = receiptImageURL;
+        requestBody.error = "Receipt Image URL: " + receiptImageURL;
+    } else {
+        requestBody.url = eReceiptURL;
+        requestBody.body = JSON.stringify(options.data);
+        requestBody.error = "eReceipt Image URL: " + eReceiptURL;
+    }
+
+    if (options.imageURL) {
+        requestBody.imageURL = options.imageURL;
+        return getImage.loadImageFromURLAndPost(requestBody);
+    } else {
+        requestBody.contentType = options.contentType;
+        return image.post(requestBody);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.refreshToken" id="apidoc.module.concur-platform.refreshToken">module concur-platform.refreshToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.refreshToken.send" id="apidoc.element.concur-platform.refreshToken.send">
+        function <span class="apidocSignatureSpan">concur-platform.refreshToken.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  var tempURL = util.format('%s?refresh_token=%s&amp;client_id=%s&amp;client_secret=%s',
+      url,
+      options.refreshToken,
+      options.client_id,
+      options.client_secret);
+  options.resourceURL = tempURL;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.reportDigests" id="apidoc.module.concur-platform.reportDigests">module concur-platform.reportDigests</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.reportDigests.get" id="apidoc.element.concur-platform.reportDigests.get">
+        function <span class="apidocSignatureSpan">concur-platform.reportDigests.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.reports" id="apidoc.module.concur-platform.reports">module concur-platform.reports</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.reports.get" id="apidoc.element.concur-platform.reports.get">
+        function <span class="apidocSignatureSpan">concur-platform.reports.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.reports.put" id="apidoc.element.concur-platform.reports.put">
+        function <span class="apidocSignatureSpan">concur-platform.reports.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.reports.send" id="apidoc.element.concur-platform.reports.send">
+        function <span class="apidocSignatureSpan">concur-platform.reports.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.requests" id="apidoc.module.concur-platform.requests">module concur-platform.requests</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.requests.get" id="apidoc.element.concur-platform.requests.get">
+        function <span class="apidocSignatureSpan">concur-platform.requests.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.revokeToken" id="apidoc.module.concur-platform.revokeToken">module concur-platform.revokeToken</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.revokeToken.send" id="apidoc.element.concur-platform.revokeToken.send">
+        function <span class="apidocSignatureSpan">concur-platform.revokeToken.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  var tempURL;
+  if (options.token) {
+    tempURL = util.format('%s?token=%s', url, options.token);
+  } else {
+    tempURL = util.format('%s?client_id=%s&amp;user=%s', url, options.client_id, options.loginId);
+  }
+  options.resourceURL = tempURL;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.salesTaxValidationRequest" id="apidoc.module.concur-platform.salesTaxValidationRequest">module concur-platform.salesTaxValidationRequest</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.salesTaxValidationRequest.get" id="apidoc.element.concur-platform.salesTaxValidationRequest.get">
+        function <span class="apidocSignatureSpan">concur-platform.salesTaxValidationRequest.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.salesTaxValidationRequest.put" id="apidoc.element.concur-platform.salesTaxValidationRequest.put">
+        function <span class="apidocSignatureSpan">concur-platform.salesTaxValidationRequest.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.suppliers" id="apidoc.module.concur-platform.suppliers">module concur-platform.suppliers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.suppliers.get" id="apidoc.element.concur-platform.suppliers.get">
+        function <span class="apidocSignatureSpan">concur-platform.suppliers.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.travelProfile" id="apidoc.module.concur-platform.travelProfile">module concur-platform.travelProfile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.travelProfile.get" id="apidoc.element.concur-platform.travelProfile.get">
+        function <span class="apidocSignatureSpan">concur-platform.travelProfile.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  options.contentType = 'application/xml';
+  var travelProfile = utils.get(options);
+  travelProfile.then(function(user) {
+    delete user.ProfileResponse.$;
+  });
+  return travelProfile;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.user" id="apidoc.module.concur-platform.user">module concur-platform.user</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.user.get" id="apidoc.element.concur-platform.user.get">
+        function <span class="apidocSignatureSpan">concur-platform.user.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+    options.resourceURL = url;
+    return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.user.send" id="apidoc.element.concur-platform.user.send">
+        function <span class="apidocSignatureSpan">concur-platform.user.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+    options.resourceURL = url;
+    return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.utils" id="apidoc.module.concur-platform.utils">module concur-platform.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.utils.delete" id="apidoc.element.concur-platform.utils.delete">
+        function <span class="apidocSignatureSpan">concur-platform.utils.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+    var deferred = Q.defer();
+
+    var headers = buildHeader(options);
+
+    request.del({url: buildUrl(options), headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error){
+            return deferred.reject(error);
+        }
+
+        // Non-204 HTTP response code
+        if (response.statusCode != 204) {
+            return deferred.reject(buildError(options, response, body));
+        }
+
+        deferred.resolve(response.statusCode);
+
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.utils.get" id="apidoc.element.concur-platform.utils.get">
+        function <span class="apidocSignatureSpan">concur-platform.utils.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+    var deferred = Q.defer();
+
+    var headers = buildHeader(options);
+
+    request({url:buildUrl(options), qs:options.queryParameters, headers:headers}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject(buildError(options, response, body));
+        }
+
+        var parsedBody;
+        if (options.contentType) {
+            xml.getCleansedObjectFromXmlBody(body, function (err, result) {
+                if (err){
+                    parsedBody = err;
+                } else {
+                    parsedBody = result;
+                }
+            });
+        } else {
+            parsedBody = JSON.parse(body);
+        }
+
+        // 200, but Error in token payload
+        if (parsedBody.Error) return deferred.reject({'error':parsedBody.Message});
+        deferred.resolve(parsedBody);
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.utils.put" id="apidoc.element.concur-platform.utils.put">
+        function <span class="apidocSignatureSpan">concur-platform.utils.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+    var deferred = Q.defer();
+
+    var headers = buildHeader(options);
+
+    request.put({url:buildUrl(options), headers:headers, body:JSON.stringify(options.body)}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-204 HTTP response code
+        if (response.statusCode != 204) {
+            return deferred.reject(buildError(options, response, body));
+        }
+
+        deferred.resolve(response.statusCode);
+
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.utils.send" id="apidoc.element.concur-platform.utils.send">
+        function <span class="apidocSignatureSpan">concur-platform.utils.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+    var deferred = Q.defer();
+
+    var headers = buildHeader(options);
+
+    request.post({url:options.resourceURL, headers:headers, body:JSON.stringify(options.body)}, function(error, response, body) {
+        // Error with the actual request
+        if (error) {
+            return deferred.reject(error);
+        }
+
+        // Non-200 HTTP response code
+        if (response.statusCode != 200) {
+            return deferred.reject(buildError(options, response, body));
+        }
+
+
+        var bodyJSON = body ? JSON.parse(body) : {};
+
+        // 200, but Error in token payload
+        if (bodyJSON.Error) return deferred.reject({'error':bodyJSON.Message});
+
+        deferred.resolve(bodyJSON);
+    });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.utils.xml" id="apidoc.module.concur-platform.utils.xml">module concur-platform.utils.xml</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.utils.xml.getCleansedObjectFromXmlBody" id="apidoc.element.concur-platform.utils.xml.getCleansedObjectFromXmlBody">
+        function <span class="apidocSignatureSpan">concur-platform.utils.xml.</span>getCleansedObjectFromXmlBody
+        <span class="apidocSignatureSpan">(xmlBody, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCleansedObjectFromXmlBody = function (xmlBody, callback) {
+    if (!callback || typeof xmlBody !== "string" || xmlBody === ""){
+        callback &amp;&amp; callback("invalid input", null);
+        return;
+    }
+
+    var cleanseXmlObject = function (obj){
+        // collapse unnecessary arrays since every level of XML is returned in an array
+        while (_.isArray(obj) &amp;&amp; obj.length === 1) {
+            obj = obj[0];
+        }
+
+        if (typeof obj === "object") {
+            _.keys(obj).forEach(function (item){
+                obj[item] = cleanseXmlObject(obj[item]);
+            });
+        }
+
+        return obj;
+    };
+
+    xml2js.parseString (xmlBody, function (err, result) {
+        callback(err, !err &amp;&amp; cleanseXmlObject(result));
+    });
+
+    return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.concur-platform.vendors" id="apidoc.module.concur-platform.vendors">module concur-platform.vendors</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.vendors.delete" id="apidoc.element.concur-platform.vendors.delete">
+        function <span class="apidocSignatureSpan">concur-platform.vendors.</span>delete
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete = function (options) {
+  options.resourceURL = url;
+  return utils.delete(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####DELETE Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">delete</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.vendors.get" id="apidoc.element.concur-platform.vendors.get">
+        function <span class="apidocSignatureSpan">concur-platform.vendors.</span>get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (options) {
+  options.resourceURL = url;
+  return utils.get(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####GET Allocations
+
+//This will contain a list of Allocations
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.allocations.<span class="apidocCodeKeywordSpan">get</span>(options)
+.then(function(data) {
+  // Data will contain the Allocations
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.vendors.put" id="apidoc.element.concur-platform.vendors.put">
+        function <span class="apidocSignatureSpan">concur-platform.vendors.</span>put
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (options) {
+  options.resourceURL = url;
+  return utils.put(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#####PUT Attendees
+
+var options = {
+  oauthToken:oauthToken,
+  id:attendeesId
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">put</span>(options)
+.then(function(data) {
+  // Data will contain the 204 response
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.concur-platform.vendors.send" id="apidoc.element.concur-platform.vendors.send">
+        function <span class="apidocSignatureSpan">concur-platform.vendors.</span>send
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (options) {
+  options.resourceURL = url;
+  return utils.send(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#####POST Attendees
+
+var options = {
+  oauthToken:oauthToken
+};
+
+concur.attendees.<span class="apidocCodeKeywordSpan">send</span>(options)
+.then(function(data) {
+  // Data will contain the Attendees
+})
+.fail(function(error) {
+  // Error will contain the error returned.
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
